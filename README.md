@@ -32,13 +32,13 @@ Python 3.11
 ---
 
 ## Usage
-- **Python Script:**
+- **Python Script**
   To train and test the model via command line:
     ```
     python src/main.py
     ```
 
-- **Docker:**  
+- **Docker**  
   Install Docker and WSL and run via command line:
     ```
     docker build -t flask-app .
