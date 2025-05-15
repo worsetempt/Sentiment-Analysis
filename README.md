@@ -62,13 +62,14 @@ Python 3.11
 ## Results
 **Selected best model: SVM**
 - **Accuracy:** 91.3%
-- **Precision / Recall / F1 Score:** 91 / 91 / 91
-  
+- **Precision / Recall / F1 Score:** 0.91 / 0.91 / 0.91
+-**Confusion Matrix**
+  [[3752  319]
+ [ 384 3632]]  
 **XGBClassifier**
 - **Accuracy:** 88.7%
-- **Precision / Recall / F1 Score:** 89 / 89 / 89
--[[3752  319]
- [ 384 3632]]  
+- **Precision / Recall / F1 Score:** 0.89 / 0.89 / 0.89
+
 **Sample Output:**
     ```
     Review: "Great product, I recommend!"
