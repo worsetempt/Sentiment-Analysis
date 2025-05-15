@@ -63,12 +63,12 @@ Python 3.11
 **Selected best model: SVM**
 - **Accuracy:** 91.3%
 - **Precision / Recall / F1 Score:** 0.91 / 0.91 / 0.91
--**Confusion Matrix**
-  [[3752  319]
- [ 384 3632]]  
+- **Confusion Matrix:** [[3752  319] [ 384 3632]]
+
 **XGBClassifier**
 - **Accuracy:** 88.7%
 - **Precision / Recall / F1 Score:** 0.89 / 0.89 / 0.89
+- **Confusion Matrix:** [[3693  378] [ 533 3483]]
 
 **Sample Output:**
     ```
