@@ -5,6 +5,14 @@
 This project applies machine learning and natural language processing (NLP) techniques to classify product reviews as real or fake. The goal is to help users quickly understand product feedback and assist businesses in monitoring customer sentiment. 
 
 ---
+
+## Description
+- Uses random search to find the best parameters for the TfidfVectorizer.
+- Uses grid search to find the best model and its associated parameters (SVM, Random Forest, Naive Bayes).
+- Uses grid search to find the best hyperparameters for XGBClassifier.
+- Compares the evaluations for the selected model and XGBClassifier.
+---
+
 ## Requirements
 
 Python 3.11
@@ -45,20 +53,28 @@ Python 3.11
     ```
     docker run -p 5000:5000 flask-app
     ```
-    Test the Flask API by predicting a sentiment in a separate cmd window, you should expect a fake review label (1) for this example:
+    Test the Flask API by predicting a sentiment in a separate cmd window, you should expect a fake review prediction (1) for this example:
     ```
     curl -X POST http://localhost:5000/predict -H "Content-Type: application/json" -d "{\"text\": \"This product is amazing!\"}"
     ```
 ---
 
 ## Results
-
-- **Accuracy:** XX%
-- **Precision / Recall / F1 Score:** XX / XX / XX
-- **Sample Output:**
+**Selected best model: SVM**
+- **Accuracy:** 91.3%
+- **Precision / Recall / F1 Score:** 91 / 91 / 91
+  
+**XGBClassifier**
+- **Accuracy:** 88.7%
+- **Precision / Recall / F1 Score:** 89 / 89 / 89
+-[[3752  319]
+ [ 384 3632]]  
+**Sample Output:**
     ```
-    Review: "This product is amazing!"
-    Predicted Sentiment: Positive
+    Review: "Great product, I recommend!"
+    Predicted Sentiment: 1
+    Review: "I recommend the product cuz its nice and comfy"
+    Predicted Sentiment: 0
     ```
 
 - *(Add confusion matrix or sample plots if available)*
