@@ -22,25 +22,8 @@ This project applies machine learning and natural language processing (NLP) tech
 
 ## Dataset
 
-- **Source:** [Insert dataset link here, e.g., Kaggle or UCI]
-- **Description:** The dataset contains Amazon product reviews, each labeled as positive or negative sentiment.
-- **Sample Format:**
-
-  | reviewText                        | sentiment |
-  |-----------------------------------|-----------|
-  | Great product, loved it!          | Positive  |
-  | Did not work as expected.         | Negative  |
-
----
-
-## Project Structure
-.
-├── data/ # Raw and preprocessed datasets
-├── models/ # Saved machine learning models
-├── notebooks/ # Jupyter notebooks for exploration and modeling
-├── src/ # Source code (preprocessing, training, evaluation)
-├── requirements.txt # Python dependencies
-└── README.md # Project documentation
+- **Source:** [https://www.kaggle.com/datasets/mexwell/fake-reviews-dataset]
+- **Description:** The dataset contains reviews, each labeled as CG (1) or OR (0) sentiment.
 
 ---
 
@@ -48,7 +31,7 @@ This project applies machine learning and natural language processing (NLP) tech
 
 1. **Clone the repository:**
     ```
-    git clone https://github.com/yourusername/amazon-sentiment-analysis.git
+    git clone https://github.com/worsetempt/Sentiment-Analysis
     cd amazon-sentiment-analysis
     ```
 
@@ -60,11 +43,7 @@ This project applies machine learning and natural language processing (NLP) tech
 ---
 
 ## Usage
-
-- **Jupyter Notebook:**  
-  Open and run the notebook in the `notebooks/` folder for step-by-step analysis and modeling.
-
-- **Python Script:**  
+- **Python Script:**
   To train or test the model via command line:
     ```
     python src/main.py
@@ -95,16 +74,14 @@ This project applies machine learning and natural language processing (NLP) tech
 ## Future Work
 
 - Test with advanced models (e.g., LSTM, BERT)
-- Deploy as a web application for real-time sentiment prediction
 - Expand to multi-class sentiment (e.g., star ratings)
 
 ---
 
 ## Acknowledgments
 
-- [Dataset Source]  
+- [https://www.kaggle.com/datasets/mexwell/fake-reviews-dataset]  
 - Libraries: scikit-learn, pandas, numpy, nltk, etc.  
-- Thanks to [any collaborators, instructors, or inspirations]
 
 ---
 
