@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project applies machine learning and natural language processing (NLP) techniques to classify Amazon product reviews as positive or negative. The goal is to help users quickly understand product feedback and assist businesses in monitoring customer sentiment.
+This project applies machine learning and natural language processing (NLP) techniques to classify product reviews as real or fake. The goal is to help users quickly understand product feedback and assist businesses in monitoring customer sentiment. 
 
 ---
 ## Requirements
@@ -32,19 +32,20 @@ Python 3.11
 ---
 
 ## Usage
-- **Python Script**
-  To train and test the model via command line:
+-   To visualize the dataset or train and test the models via command line:
     ```
     python src/main.py
     ```
 
-- **Docker**  
-  Install Docker and WSL and run via command line:
+-   If you have Docker installed, open a terminal and navigate to project directory (where Dockerfile is located). Then run:
     ```
     docker build -t flask-app .
+    ```
+    After the image builds successfully, start your container and map the ports:
+    ```
     docker run -p 5000:5000 flask-app
     ```
-  Then try to predict a sentiment:
+    Test the Flask API by predicting a sentiment in a separate cmd window, you should expect a fake review label (1) for this example:
     ```
     curl -X POST http://localhost:5000/predict -H "Content-Type: application/json" -d "{\"text\": \"This product is amazing!\"}"
     ```
