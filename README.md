@@ -75,10 +75,8 @@ Sample Output:
     ```
     Review: "Great product, I recommend!"
     Predicted Sentiment: 1
-    Review: "I recommend the product cuz its nice and comfy"
-    Predicted Sentiment: 0
     ```
-
+    
 ---
 
 ## Future Work
