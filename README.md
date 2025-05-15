@@ -5,20 +5,9 @@
 This project applies machine learning and natural language processing (NLP) techniques to classify Amazon product reviews as positive or negative. The goal is to help users quickly understand product feedback and assist businesses in monitoring customer sentiment.
 
 ---
+## Requirements
 
-## Table of Contents
-
-- [Overview](#overview)
-- [Dataset](#dataset)
-- [Project Structure](#project-structure)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Results](#results)
-- [Future Work](#future-work)
-- [Acknowledgments](#acknowledgments)
-- [License](#license)
-
----
+Python 3.11
 
 ## Dataset
 
@@ -44,17 +33,21 @@ This project applies machine learning and natural language processing (NLP) tech
 
 ## Usage
 - **Python Script:**
-  To train or test the model via command line:
+  To train and test the model via command line:
     ```
     python src/main.py
     ```
 
-- **(Optional) Web App:**  
-  If you have a Streamlit or Flask app:
+- **Docker:**  
+  Install Docker and WSL and run via command line:
     ```
-    streamlit run src/app.py
+    docker build -t flask-app .
+    docker run -p 5000:5000 flask-app
     ```
-
+  Then try to predict a sentiment:
+    ```
+    curl -X POST http://localhost:5000/predict -H "Content-Type: application/json" -d "{\"text\": \"This product is amazing!\"}"
+    ```
 ---
 
 ## Results
@@ -75,13 +68,6 @@ This project applies machine learning and natural language processing (NLP) tech
 
 - Test with advanced models (e.g., LSTM, BERT)
 - Expand to multi-class sentiment (e.g., star ratings)
-
----
-
-## Acknowledgments
-
-- [https://www.kaggle.com/datasets/mexwell/fake-reviews-dataset]  
-- Libraries: scikit-learn, pandas, numpy, nltk, etc.  
 
 ---
 
