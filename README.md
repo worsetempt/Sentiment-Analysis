@@ -78,8 +78,6 @@ Python 3.11
     Predicted Sentiment: 0
     ```
 
-- *(Add confusion matrix or sample plots if available)*
-
 ---
 
 ## Future Work
