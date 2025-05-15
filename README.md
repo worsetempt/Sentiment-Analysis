@@ -11,6 +11,7 @@ This project applies machine learning and natural language processing (NLP) tech
 - Uses grid search to find the best model and its associated parameters (SVM, Random Forest, Naive Bayes).
 - Uses grid search to find the best hyperparameters for XGBClassifier.
 - Compares the evaluations for the selected model and XGBClassifier.
+  
 ---
 
 ## Requirements
@@ -74,8 +75,6 @@ Python 3.11
     ```
     Review: "Great product, I recommend!"
     Predicted Sentiment: 1
-    ```
-    ```
     Review: "I recommend the product cuz its nice and comfy"
     Predicted Sentiment: 0
     ```
