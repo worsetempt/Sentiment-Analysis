@@ -71,7 +71,7 @@ Python 3.11
 - **Precision / Recall / F1 Score:** 0.89 / 0.89 / 0.89
 - **Confusion Matrix:** [[3693  378] [ 533 3483]]
 
-Sample Output:
+**Sample Output:**
     ```
     Review: "Great product, I recommend!"
     Predicted Sentiment: 1
