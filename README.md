@@ -46,7 +46,7 @@ Python 3.11
     python src/main.py
     ```
 
--   If you have Docker installed, open a terminal and navigate to project directory (where Dockerfile is located). Then run:
+-   If you have Docker installed, open command and navigate to project directory (where Dockerfile is located). Make sure deploy.py and model/vectorizer files are in same directory. Then run:
     ```
     docker build -t flask-app .
     ```
