@@ -1,0 +1,9 @@
+flask
+scikit-learn
+xgboost
+pandas
+joblib
+nltk
+kagglehub
+seaborn
+matplotlib
